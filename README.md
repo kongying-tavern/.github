@@ -16,6 +16,7 @@ This is Kongying Tavern github repository configuration.
 When you use this template, try follow the checklist to update your info properly
 
 - [ ] Modify the branch and paths-ignore in `workflows`
+- [ ] Replace or delete discussion items in `.github/ISSUE_TEMPLATE/config.yml`
 - [ ] Check whether the script in the workflow matches the one in your project
 - [ ] If your package management tool is not pnpm, please refer to `.github/workflows/pages.yml` to modify
 - [ ] Add script `"envinfo": "npx envinfo --npmPackages  --system --browsers --binaries --duplicates"` in package.json
