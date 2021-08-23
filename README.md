@@ -30,10 +30,6 @@ When you use this template, try follow the checklist to update your info properl
 
     If you are deploying to `https://<USERNAME>.github.io/<REPO>/`, for example your repository is at `https://github.com/<USERNAME>/<REPO>`, then set `base` to `"/<REPO>/"`.
 
-2. Choose your preferred CI tools. Here we take [GitHub Actions](https://github.com/features/actions) as an example.
-
-  Create `.github/workflows/pages.yml` to set up the workflow.
-
 ## Usage
 
 Copy the `.github` folder to your project root directory
