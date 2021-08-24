@@ -7,6 +7,7 @@ This is Kongying Tavern github repository configuration.
 - ❤️ [Sponsor](.github/FUNDING.yml)
 - 🤖 [DependaBot](.github/dependabot.yml)
 - 🧬 [CodeQL](.github/workflows/codeql-analysis.yml)
+- ⚡ [Export Size](.github/workflows/export-size.yml)
 - 📝 [CommitConvention](.github/commit-convention.md)
 - 🦾 [IssuesHelper](.github/workflows/issue-commented.yml)
 - ☁️ [GithubPagesCI](.github/workflows/pages.yml)
@@ -41,6 +42,7 @@ Copy the `.github` folder to your project root directory
 
 This project is heavily inspired by the following awesome projects.
 
+- [ExportSize](https://github.com/antfu/export-size-action)
 - [GithubCodeQL](https://github.com/github/codeql)
 - [IssuesHelper](https://github.com/actions-cool/issues-helper)
 - [ActionSetup](https://github.com/pnpm/action-setup)
