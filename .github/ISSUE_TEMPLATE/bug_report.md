@@ -38,5 +38,5 @@ assignees: ''
 - Output of `envinfo`:
 
 ```bash
-# Paste output of `pnpm envinfo` here
+# Paste output of `envinfo` here
 ```
