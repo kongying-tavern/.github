@@ -6,6 +6,7 @@ This is Kongying Tavern github repository configuration.
 
 - ❤️ [Sponsor](.github/FUNDING.yml)
 - 🤖 [DependaBot](.github/dependabot.yml)
+- 🧬 [CodeQL](.github/workflows/codeql-analysis.yml)
 - 📝 [CommitConvention](.github/commit-convention.md)
 - 🦾 [IssuesHelper](.github/workflows/issue-commented.yml)
 - ☁️ [GithubPagesCI](.github/workflows/pages.yml)
@@ -15,6 +16,7 @@ This is Kongying Tavern github repository configuration.
 
 When you use this template, try follow the checklist to update your info properly
 
+- [ ] Check the language in `.github/workflows/codeql-analysis.yml`
 - [ ] Modify the branch and paths-ignore in `workflows`
 - [ ] Replace or delete discussion items in `.github/ISSUE_TEMPLATE/config.yml`
 - [ ] Check whether the script in the workflow matches the one in your project
@@ -39,6 +41,7 @@ Copy the `.github` folder to your project root directory
 
 This project is heavily inspired by the following awesome projects.
 
+- [GithubCodeQL](https://github.com/github/codeql)
 - [IssuesHelper](https://github.com/actions-cool/issues-helper)
 - [ActionSetup](https://github.com/pnpm/action-setup)
 - [ActionCatch](https://github.com/actions/cache)
