@@ -1,5 +1,5 @@
 # @See https://pages.github.com/
-name: page
+name: Gtihub Pages
 
 on:
   # trigger deployment on every push to main branch
@@ -10,6 +10,7 @@ on:
     # @See https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
     paths-ignore:
       - '**/__tests__/**'
+      - './README.md'
   # trigger deployment manually
   workflow_dispatch:
 
