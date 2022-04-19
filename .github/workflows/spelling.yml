@@ -1,4 +1,4 @@
-name: pr-spell-check
+name: PrSpellCheck
 on: [pull_request]
 
 jobs:
