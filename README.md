@@ -15,7 +15,7 @@ This is Kongying Tavern Tema github repository configuration.
 - 🔎 [PR Spell Check with Typos](.github/workflows/spelling.yml)
 - 📇 [Lychee link checking](.github/workflows/links.yml)
 
-## Checklist
+## Check list
 
 When you use this template, try follow the checklist to update your info properly
 
