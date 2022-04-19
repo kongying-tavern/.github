@@ -1,6 +1,6 @@
-# Kongying Tavern Github Config And Workflows
+# Kongying Tavern Team Github Config And Workflows
 
-This is Kongying Tavern github repository configuration.
+This is Kongying Tavern Tema github repository configuration.
 
 ## Features
 
@@ -12,6 +12,8 @@ This is Kongying Tavern github repository configuration.
 - 🦾 [IssuesHelper](.github/workflows/issue-commented.yml)
 - ☁️ [GithubPagesCI](.github/workflows/pages.yml)
 - 🖊️ [Issues and Pull requests template](.github/ISSUE_TEMPLATE/)
+- 🔎 [PR Spell Check with Typos](.github/workflows/spelling.yml)
+- 📇 [Lychee link checking](.github/workflows/links.yml)
 
 ## Checklist
 
