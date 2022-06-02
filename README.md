@@ -54,4 +54,4 @@ This project is heavily inspired by the following awesome projects.
 
 ## License
 
-[MIT](https://github.com/kongying-tavern/.github/blob/main/LICENSE)
+[MIT](https://github.com/kongying-tavern/.github/blob/main/License)
