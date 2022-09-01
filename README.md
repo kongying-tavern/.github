@@ -1,4 +1,4 @@
-# Kongying Tavern Team Github Config And Workflows
+# Kongying Tavern Team Github Config And Workflows Templates
 
 This is Kongying Tavern Tema github repository configuration.
 
