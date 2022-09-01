@@ -1,40 +1,37 @@
-name: Coverage
+name: Check
 
 on:
   push:
     branches:
-      - main
       - dev
+      - main
     paths-ignore:
       - '**.md'
   pull_request:
     branches:
-      - main
       - dev
+      - main
   workflow_dispatch:
 
 jobs:
-  coverage:
-    runs-on: ubuntu-latest
+  check:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node: ['12', '14']
 
-    env:
-      NODE_VERSION: '14'
+    runs-on: ${{ matrix.os }}
 
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3.4.1
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
       - name: Use Node.js ${{ matrix.node }}
-        uses: actions/setup-node@v3.4.1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
 
       - name: Cache pnpm modules
-        uses: actions/cache@v3.0.6
+        uses: actions/cache@v3
         with:
           path: ~/.pnpm-store
           key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
@@ -42,15 +39,16 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install dependencies
-        uses: pnpm/action-setup@v2.2.2
+        uses: pnpm/action-setup@v2
         with:
           version: 6.0.2
           run_install: true
 
-      - name: Test coverage
-        run: pnpm test:coverage
+      - name: Lint
+        run: pnpm lint
 
-      - name: Coveralls
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build
+        run: pnpm build
+
+      - name: Test
+        run: pnpm test
