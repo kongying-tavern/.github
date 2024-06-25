@@ -49,14 +49,14 @@ body:
     id: systemVersion
     attributes:
       label: 系统版本
-      placeholder: MacOS(11.2.3)
+      placeholder: Windows(23H2)、MacOS(11.2.3)
 
   - type: textarea
     id: environmentInfo
     attributes:
       label: 环境信息
       description: 输出 `envinfo`
-      placeholder: 请在此处粘贴 `envinfo` 的输出
+      placeholder: 请在此处粘贴 `envinfo` 的输出。Web 用户不需要填此项。
 
   - type: textarea
     id: remarks
